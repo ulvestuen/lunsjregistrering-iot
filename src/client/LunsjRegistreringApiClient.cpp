@@ -21,7 +21,7 @@ void LunsjRegistreringApiClient::sendUid(String uid)
     Serial.println("Connection failed");
   }
 
-  String urlPath = "/post";
+  String urlPath = "/event";
   Serial.print("Requesting URL: ");
   Serial.println(urlPath);
   String httpMessageBody = "{\"uid\": \"" + uid + "\"}";
